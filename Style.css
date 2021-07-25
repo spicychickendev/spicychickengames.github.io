@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+li {
+    float: left;
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+   background-color: #111;
+}
+
+
+#topbar {
+    background-color: lightblue;
+    width: 100%;
+    height: 100px;
+}
+
+#main {
+    margin-left:5%;
+    margin-top:50px;
+    width: 90%;
+    height: 1000px;
+    background-color: #B0B0B0;
+}
