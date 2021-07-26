@@ -43,6 +43,7 @@ li a:hover {
 
 footer {
     margin-top: 50px;
+    text-align:center;
     background-color: var(--c2);
     color: white;
     height: 20px;
@@ -50,6 +51,17 @@ footer {
     width:100%;
 }
 
+#logo {
+    width: 96px;
+    float: left;
+    position: absolute;
+    bottom: 0px;
+
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--c1);
+}
 
 #topbar {
     width: 100%;
@@ -66,7 +78,7 @@ footer {
 
 
 #main {
-    border-radius: 25px;
+    border-radius: 15px;
     margin-left: 5%;
     width: 70%;
     min-height: 100px;
@@ -75,7 +87,7 @@ footer {
     color: var(--c1);
 }
 #games {
-    border-radius: 25px;
+    border-radius: 15px;
     margin-left: 5%;
     width: 15%;
     float: left;
@@ -96,8 +108,7 @@ footer {
     margin-left: 8px;
     margin-right: 8px;
     font-size: 20px;
-    text-align: justify;
-    text-justify: inter-word;
+
 }
 
 .gamelink {
