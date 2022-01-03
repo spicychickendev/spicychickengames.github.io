@@ -102,6 +102,11 @@ body{
 	top: 510px;
 	width:100%;
 }
+#main #p4{
+	position:absolute;
+	top: 340px;
+	width:100%;
+}
 
 #p2 a {
 	position:relative;
