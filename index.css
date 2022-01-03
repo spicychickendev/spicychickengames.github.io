@@ -1,0 +1,309 @@
+body{
+	overflow-x: hidden;
+}
+#slideshow{
+	position:relative;
+	top:50px;
+	width: 100%;
+	height: auto;
+	
+	padding-bottom: 15.254%;
+
+}
+.slide{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display:none;
+	width: 100%;
+	z-index:1;
+
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+
+}
+.slideshow1{
+	animation:  slideshowslide1 0.6s;
+}
+.slideshow2{
+	animation:  slideshowslide2 0.6s;
+}
+.slideshow4{
+	animation:  slideshowslide3 0.6s;
+}
+.slideshow3{
+	animation:  slideshowslide4 0.6s;
+}
+
+#LeftButton{
+	position:absolute;
+	top: 50%;
+	transform: translate(0%, -75%);
+	left: 10px;
+	font-size: 30px;
+	z-index:1;
+	color:var(--c1);
+	user-select: none;
+}
+#RightButton{
+	position:absolute;
+	top: 50%;
+	transform: translate(0%, -75%);
+	right: 10px;
+	font-size: 30px;
+	z-index:1;
+	color:var(--c1);
+	user-select: none;
+}
+#LeftButton:hover, #RightButton:hover{
+	color:var(--c3);
+	cursor:pointer;
+}
+
+#main {
+	position:relative;
+	top: 0px;
+	left: 10%;
+    width: 65%;
+   
+
+	text-align:center;
+    color: #1c041f;
+	animation: fadein1 2s;
+}
+#main #h1{
+	position:absolute;
+	top: 30px;
+	width:100%;
+	
+}
+#main #p1{
+	position:absolute;
+	top: 70px;
+	width:100%;
+
+}
+#main #h2{
+	position:absolute;
+	top: 250px;
+	width:100%;
+}
+#main #p2{
+	position:absolute;
+	top: 290px;
+	width:100%;
+}
+#main #h3{
+	position:absolute;
+	top: 470px;
+	width:100%;
+}
+#main #p3{
+	position:absolute;
+	top: 510px;
+	width:100%;
+}
+
+#p2 a {
+	position:relative;
+    display: inline-block;
+
+    text-align: center;
+	padding:10px;
+    text-decoration: none;
+	border-radius:5px;
+	
+	top:0px;
+	
+	color:var(--c1);
+	background-color: var(--c2);
+	font-size: 20px;
+	
+	transition: background-color 0.3s ease-in-out,top 0.3s ease-in-out;
+}
+#p2 a:hover {
+	top: -10px;
+	background-color: var(--c3);
+}
+#main h1,  #main h2 {
+    text-align: center;
+    font-size: 28px;
+}
+#main p {
+    font-size: 20px;
+
+}
+
+#games {
+	position:relative;
+	top: 0px;
+	left: 85%;
+	width: 15%;
+	min-height:800px;
+	height: calc(100vh - 50px - (100vw / 1349) * 204 );
+    text-align: center;
+    background-color:  var(--c3);
+    color: var(--c1);
+}
+#games h1{
+	position:relative;
+	top:30px;
+	text-align: center;
+    font-size: calc(16px + 0.5vw);
+ }
+
+.gamelink a p {
+	position: absolute;
+	top: 8vw;
+	left: 0px;
+	width: 100%;
+	color: var(--c1);
+    text-decoration: none;
+	font-size: 18px;
+
+	text-align:center;
+	transition: font-size 0.3s ease-in-out;
+}
+.gamelink {
+	position: absolute;
+	width: 100%;
+	left: 0%;
+}
+.gamelink a {
+	position: absolute;
+	width: 100%;
+	left: 0%;
+}
+.gamelink a:hover img {
+    filter: brightness(120%);
+	transition: filter 0.3s ease-in-out;
+}
+.gamelink a:hover p {
+    color: var(--c4);
+	font-size: 20px;
+}
+.gamelink a img {
+	position: absolute;
+	top: 0px;
+	left: 12.5%;
+	max-width:200px;
+	filter: brightness(100%);
+    border-radius: 5px;
+    text-align: center;
+    width: 75%;
+
+	transition: filter 0.3s ease-in-out;
+}
+.g1{top: 80px;}
+.g2{top: 250px;}
+.g3{top: 420px;}
+.g4{top: 590px;}
+
+
+@keyframes slideshowslide1 {
+    from { 
+	left: 100%;
+		}
+    to   { 
+	left: 0%;
+	}
+}
+@keyframes slideshowslide2 {
+    from { 
+	left: 0%;
+		}
+    to   { 
+	left: -100%;
+	}
+}
+@keyframes slideshowslide3 {
+    from { 
+	left: -100%;
+		}
+    to   { 
+	left: 0%;
+	}
+}
+@keyframes slideshowslide4 {
+    from { 
+	left: 0%;
+		}
+    to   { 
+	left: 100%;
+	}
+}
+@keyframes fadein1 {
+    from { 
+	top:-30px;
+	opacity: 0; 
+		}
+    to   { 
+	top:0px;
+	opacity: 1; 
+	}
+}
+@keyframes fadein2 {
+    from { 
+	top:50px;
+	opacity: 0; 
+		}
+    to   { 
+	top:80px;
+	opacity: 1; 
+	}
+}
+
+@media (max-width: 900px)
+{
+	#games{
+		display: none;
+	}
+	
+	#main {
+		height:600px;
+		left: 10%;
+		width: 80%;
+	}
+	#main #h1{
+		position:absolute;
+		top: 30px;
+		width:100%;	
+	}
+	#main #p1{
+		position:absolute;
+		top: 60px;
+		width:100%;
+
+	}
+	#main #h2{
+		position:absolute;
+		top: 220px;
+		width:100%;
+	}
+	#main #p2{
+		position:absolute;
+		top: 250px;
+		width:100%;
+	}
+	#main #h3{
+		position:absolute;
+		top: 410px;
+		width:100%;
+	}
+	#main #p3{
+		position:absolute;
+		top: 440px;
+		width:100%;
+	}
+	#main h1, #main h2, #games h1 {
+		text-align: center;
+		font-size: 20px;
+	}
+	#main p {
+		font-size: 15px;
+	}
+	#p2 a {
+		font-size: 15px;
+		padding: 4px;
+		border-radius:3px;
+	}
+}
