@@ -1,0 +1,19 @@
+iframe{
+	position:relative; 
+	left:10%; 
+	margin-top:100px;
+}
+#main{
+	animation: fadein1 2s;
+	position:relative;
+}
+@keyframes fadein1 {
+    from { 
+	top:-30px;
+	opacity: 0; 
+		}
+    to   { 
+	top:0px;
+	opacity: 1; 
+	}
+}
